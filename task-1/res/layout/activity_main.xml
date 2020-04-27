@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity" >
+    <!-- 
+       一、作业要求:  设定一个信息填入项，包括可以在界面输入某位同学的若干信息，
+       
+       1. 学号
+       2. 姓名
+       3. 年龄
+       4. 电话号码
+       5. 登录密码
+       6. 确认登录密码
+   最后一行有两个按钮，一个确定按钮，一个重置按钮，功能要求如下，确定按钮点击后，
+ 在后台判断学生输入数据的正确性，如果不正确或有关键的错误，使用toast给用户提示错误，
+ ，比如电话号码必须是11位数字
+ ，登录密码和确认登录密码必须相同，
+ 将该同学的学号、姓名、年龄、电话号码信息转到另外一个界面并显示出这部分的信息。
+ 点击重置按钮后，对应的输入信息均被置空。
+     -->
+
+</LinearLayout>
