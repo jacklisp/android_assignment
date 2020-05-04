@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
        // step3:使用 findViewById 获得相关组件的引用。
        
         //step4: 给按钮添加监听

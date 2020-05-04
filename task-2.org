@@ -1,0 +1,88 @@
+#+LATEX_CLASS: org-article
+#+title: 作业2
+* task-2
+** 资源应用实训
+*** 实训步骤
+1. 请将工程task-2导入到eclipse的工作空间。
+2. 在res/values目录下创建颜色资源文件 colors.xml,该文件用于描述颜色资
+   源。
+   | name| value|
+   |--------+----------|
+   | c1     | #F00     |
+   | c2     | #0F0     |
+   | c3     | #00F     |
+   | c4     | #0FF     |
+   | c5     | #F0F     |
+   | c6     | #FF0     |
+   | c7     | #07F     |
+   | c8     | #70F     |
+   | c9     | #F70     |
+   创建颜色的方式:在<resource>资源标记添加color 标签,如下
+   #+BEGIN_SRC xml
+   <resource>
+     <color name="c1">#F00</color>
+   </resource>
+   #+END_SRC
+3. 在res/values目录下创建字符资源文件 strings.xml,该文件用于描述颜色资
+   源。
+   | name | value |
+   |------+-------|
+   | c1   | F00   |
+   | c2   | 0F0   |
+   | c3   | 00F   |
+   | c4   | 0FF   |
+   | c5   | F0F   |
+   | c6   | FF0   |
+   | c7   | 07F   |
+   | c8   | 70F   |
+   | c9   | F70   |
+创建字符串资源的方式:在<resource>资源标记添加string 标签,如下
+   #+BEGIN_SRC xml
+   <resource>
+     <string name="c1">F00</color>
+   </resource>
+   #+END_SRC
+4. 在res/values目录下创建资源文件 dimen.xml,该文件用于描述颜色资
+   源。
+   | name            | value |
+   |-----------------+-------|
+   | spacing         | 8dp   |
+   | cell_width      | 60dp  |
+   | cell_heght      | 66dp  |
+   | title_font_size | 18sp  |
+
+   #+BEGIN_SRC xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <resources>
+       <dimen name="spacing">8dp</dimen>
+       <!-- 定义GridView组件中每个单元格的宽度、高度 -->
+       <dimen name="cell_width">60dp</dimen>
+       <dimen name="cell_height">66dp</dimen>
+       <!-- 定义主程序的标题的字体大小 -->
+       <dimen name="title_font_size">18sp</dimen>
+   </resources>
+   #+END_SRC
+
+5. 注意:xml文档需要在文件的第一行写入如下代码，表示文档的类型和支持的编码格
+   式。
+   #+BEGIN_SRC xml
+   <?xml verson="1.0" encoding="utf-8"?>
+   #+END_SRC
+   xml文档被称之为标记式语言，与html语言很像，以<tag>为开始，并以
+   </tag>结束。属性添加在 <tag> 的首部 “>” 之前。例如:
+   #+BEGIN_SRC xml
+   <tag attr1="value1" attr2="value2">
+   #+END_SRC
+   该标签有两个属性，属性名为attr1和attr2,属性的值为value1和value2。
+
+6. 资源的调用:在res/layout/acitivity_main.xml文件添加4个TextView组件,
+   并将其text显示名称设置为预定义的字符串名c1,c3,c5,c7,颜色设置成预定
+   好的颜色名c1,c3,c5,c7,尺寸大小设置为预定义好的titile_font_size。
+7. 在最后一个TextView组件底下新增加一个Button组件，text属性设置为“变
+   换颜色”，点击按钮后，前面的4个TextView组件显示预定义的字符串名
+   c2,c4,c6,c8,而颜色也变换成预定义好的颜色名c2,c4,c6,c8。
+
+
+
+
+
