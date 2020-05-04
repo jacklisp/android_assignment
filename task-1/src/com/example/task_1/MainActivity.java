@@ -12,66 +12,32 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-//创建5个edittext组件
-private EditText ed1,ed2,ed3,ed4,ed5;
-private Button btn1, btn2;
+//step1: 创建6个edittext组件,分别表示某个同学的姓名、年龄、电话、
+//       班级、密码、确认密码。
+
+
+
+//step2: 创建两个按钮，一个实现确认操作，一个实现重置操作。
 	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.layout_1);
-        
-        ed1 = (EditText)findViewById(R.id.editText1);
-        ed2 = (EditText)findViewById(R.id.editText2);
-        ed3 = (EditText)findViewById(R.id.editText3);
-        ed4 = (EditText)findViewById(R.id.editText4);
-        ed5 = (EditText)findViewById(R.id.editText5);
-        
-        btn1 = (Button)findViewById(R.id.btn1);
-        btn2 = (Button)findViewById(R.id.btn2);
-        
-        //给按钮添加监听
+       // step3:使用 findViewById 获得相关组件的引用。
+       
+        //step4: 给按钮添加监听
         btn1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				String xuehao = ed1.getText().toString();
-				String name = ed2.getText().toString();
-				String age = ed3.getText().toString();
-				String pwd = ed4.getText().toString();
-				String cpwd = ed5.getText().toString();
+      public void onClick(View arg0) {
+        //step5: 使用EditText组件的getText()方法获取字符串。
 				
-				//后台操作
-				if(name == null || age == null)
-				{
-					Toast.makeText(getApplicationContext(), 
-							       "您忘记输入名字和年龄了", 
-							       Toast.LENGTH_LONG).show();
-				}
-				
-				if(pwd != null && cpwd != null && pwd.equals(cpwd))
-				{
-					//后续操作,执行跳转: 非常重要的知识点
-					//带值跳转:
-					Intent intent = new Intent();
-					intent.setClass(MainActivity.this, InfoActivity.class);
-					
-					Bundle bundle = new Bundle();
-					bundle.putString("name", name);
-					bundle.putString("age", age);
-					bundle.putString("pwd", pwd);
-					intent.putExtra("stu", bundle);
-					
-					startActivity(intent);
-					
-				} else {
-					//提示
-					Toast.makeText(getApplicationContext(), 
-						       "您没有输入密码或者两次密码输入不正确", 
-						       Toast.LENGTH_LONG).show();
-				}
+				//step6: 判断输入的年龄和名字不能为空,否则弹出Toast提示。
+
+				//step7: 判断输入的两次密码要相同,否则弹出Toast提示。
+
+			  //step8: 校验成功，使用Intent类带值跳转。	
 			}
 		});
         
