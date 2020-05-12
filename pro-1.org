@@ -1,0 +1,24 @@
+#+LATEX_CLASS: org-article
+#+STARTUP: options
+#+title: 工程实训1：环境状态值的存储与读取
+* 工程实训1
+** 工程实训能力要求
+1. 掌握使用SharedPreferences存储数据
+2. 掌握使用SharedPreferences读取数据
+
+** 实训步骤
+1. 将pro-1工程导入到eclipse-adt环境
+2. 该工程打开res/layout路径下的activity_main.xml，界面显示如下:
+[[img/pro_1.png]]
+3. 打开src/MainActivity.java, 根据第二步的显示界面添加对应的组件成员。
+4. 请你为initView()函数补充代码，该函数主要功能是初始化界面上显示的组件。
+5. 设置“保存”按钮单击事件，获取EditText的值，并通过SharedPreference
+   类保存数据。
+   - 设置EditText的值，如果全部为空则返回
+   - 实例化一个SharedPreferences对象，定义名字和访问类型，存储文件名设
+     置为zhcs.xml,访问类型是私有的，只允许本程序访问。
+   - 获取编辑器并保存数据到文件。
+6. 补充程序，实现“数据清空功能”,当点击该按钮，EditText中的所有数据都
+   被清空。
+7. 补充程序，实现“读取按钮”功能。当点击读取按钮后，程序将通过
+   SharedPreferences写入到移动设备中。
