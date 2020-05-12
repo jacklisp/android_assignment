@@ -9,7 +9,7 @@
 ** 实训步骤
 1. 将pro-1工程导入到eclipse-adt环境
 2. 该工程打开res/layout路径下的activity_main.xml，界面显示如下:
-[[img/pro_1.png]]
+[[img/pro_1.PNG]]
 3. 打开src/MainActivity.java, 根据第二步的显示界面添加对应的组件成员。
 4. 请你为initView()函数补充代码，该函数主要功能是初始化界面上显示的组件。
 5. 设置“保存”按钮单击事件，获取EditText的值，并通过SharedPreference
