@@ -4,8 +4,7 @@
 ** 资源应用实训
 *** 实训步骤
 1. 请将工程task-2导入到eclipse的工作空间。
-2. 在res/values目录下创建颜色资源文件 colors.xml,该文件用于描述颜色资
-   源。
+2. 在res/values目录下创建颜色资源文件 colors.xml,该文件用于描述颜色资源。
    | name| value|
    |--------+----------|
    | c1     | #F00     |
@@ -23,8 +22,7 @@
      <color name="c1">#F00</color>
    </resource>
    #+END_SRC
-3. 在res/values目录下创建字符资源文件 strings.xml,该文件用于描述颜色资
-   源。
+3. 在res/values目录下创建字符资源文件 strings.xml,该文件用于描述颜色名称。
    | name | value |
    |------+-------|
    | c1   | F00   |
@@ -42,8 +40,7 @@
      <string name="c1">F00</color>
    </resource>
    #+END_SRC
-4. 在res/values目录下创建资源文件 dimen.xml,该文件用于描述颜色资
-   源。
+4. 在res/values目录下创建资源文件 dimen.xml,该文件用于描述尺寸资源。
    | name            | value |
    |-----------------+-------|
    | spacing         | 8dp   |
