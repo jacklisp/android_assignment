@@ -1,17 +1,4 @@
 #+LATEX_CLASS: org-article
 #+STARTUP: showall
 #+title: 作业4
-* task-4:星座查询工具
-** 本次实训项目是要实现一个星座查询APP,该
-** 实训步骤 
-1. 将工程task-4导入到你的elipse内,该工程包含有12张小图标，res/layout
-   有布局文件item.xml，该布局文件属于GridView内元素的布局文件。
-2. 打开MainActivity.java，并按照以下顺序补充源程序:
-   - step1: findViewById方法获取GridView组件
-   - step2: 构造from,to,两个资源数组，from为资源名称数组，里面的字符串内容
-     表示资源的名称,to为资源id数组，指向item.xml对应组件的id
-   - step3: 为data_list准备数据,使用for循环将所有的图像资源和字符串资源通过Map存入
-     data_list链表中。
-   - step4: 创建适配器SimpleAdapter,将data_list,item的布局资源id,资源名称数组，资源id数组作为参数传入。
-   - step5: 使用gview.setAdapter方法设置适配器。
-3. 运行工程，如果没有做错，你可以看到一个3x3的GridView图像。
+* task-4: Button的应用
