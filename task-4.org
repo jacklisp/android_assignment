@@ -1,4 +1,31 @@
 #+LATEX_CLASS: org-article
 #+STARTUP: showall
 #+title: 作业4
-* task-4: Button的应用
+* task-4: Toast与对话框
+** 实训要求:
+1. 将task-4导入到工程路径下
+2. 该工程的主界面有三个按钮，分别为“打开对话框”，“打开自定义对话框”，
+   “退出程序”。
+3. 实现打开对话框功能，点击“打开对话框”按钮，打开一个普通的对话框，对
+   话框标题为“普通对话框”，有确定和取消按钮，对话框消息设置为：“您打开
+   了一个对话框”，点击“确定”按钮后，使用Toast提示“您点击了确定按钮！”请参考 AlertDialog的实现方式。
+   + 实例化AlertDialog对话框构造器
+   #+BEGIN_SRC java
+   AlertDialog.Builder b = new AlertDialog.Builder(getApplicationContext());
+   #+END_SRC
+   + 调动构造器设定对话框样式,设置标题、消息、确定按钮、取消按钮
+   + Builder生成AlertDialog对象 
+   + 调用show方法将其显示
+4. 实现打开自定义对话框的功能，点击“打开自定义对话框”，弹出自定义对话
+   框，对话框包含有EditText组件和“确定”、“取消”两个按钮，当点击确定后，
+   使用Toast组件显示EditText组件的内容。
+   + 为自定义对话框描绘一个布局文件
+   + 使用getSystemService函数获取LAYOUT_INFLATER_SERVICE系统服务对象
+   + 使用LayoutInflater类的inflate方法渲染成视图组件
+   + 后续可参考普通对话框的设置方式，但在设置时要将setView方法将生成的
+     视图设置进对话框样式
+   + 获取EditText的内容前，先要通过视图的findViewById方式拿到组件引用。
+5. 实现退出按钮功能。
+6. 作业提交:
+   1. src下的MainActivity.java文件
+   2. 你创建的自定义对话框布局文件
