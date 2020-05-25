@@ -1,11 +1,8 @@
 #+LATEX_CLASS: org-article
 #+STARTUP: showall
-#+title: 作业4
+#+title: 作业5
 * task-5: Intent跳转实训
-** STARTED 实训步骤
-   :LOGBOOK:
-   CLOCK: [2020-05-25 周一 11:15]
-   :END:
+** 实训步骤
 1. 导入工程task-5到工程下，主界面显示如下
    [[img/task-5.png]]
 2. 该项目主界面有5个按钮，分别为:
