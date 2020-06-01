@@ -9,8 +9,8 @@
 
 ** 步骤
 1. 将task-6工程导入到你的工作空间
-2. 在MainActivity.java文件创建适当的成员变量,如:ProgressBar、TextView
-、Handler
+2. 在MainActivity.java文件创建适当的成员变量,如:ProgressBar、TextView、
+   Handler
 3. 初始化相关视图组件,并设置相关的重要参数，比如初始化时的进度值，最大
    进度值等
 4. 创建线程类，并重构线程类中的run方法，插入一个while(true)循环，并在
@@ -19,6 +19,9 @@
      息
    + 判断progress进度值是否达到最大值，达到就更新UI并中断线程，没有达
      到就该进度值自增1，并封装成message对象发向主UI线程
-5. 重构Handler类的handleMessage方法,处理接收到数据信息后，将更新UI
+5. 重构Handler类的handleMessage方法,处理接收到数据信息后，将更新主UI中
+   的ProgressBar的progress进度值，并将进度值的百分比计算后，更新到
+   TextView内
+
 
 
