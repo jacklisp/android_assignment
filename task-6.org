@@ -1,0 +1,24 @@
+* ProgressBar 练习
+** 要求
+1. 实现一个ProgressBar,每隔1秒更新UI,TextView显示更新的百分比“进度值
+   %”
+2. 配合后台线程和Handler类实现，Handler类负责将后台线程的数据发送到前
+   台主UI并更新UI \\
+#+attr_latex: width=0.8\textwidth
+[[file:img/task-6.png]]
+
+** 步骤
+1. 将task-6工程导入到你的工作空间
+2. 在MainActivity.java文件创建适当的成员变量,如:ProgressBar、TextView
+、Handler
+3. 初始化相关视图组件,并设置相关的重要参数，比如初始化时的进度值，最大
+   进度值等
+4. 创建线程类，并重构线程类中的run方法，插入一个while(true)循环，并在
+   循环中
+   + 每隔1秒创建一个Message消息，并通过handler的sendMessage方法发送消
+     息
+   + 判断progress进度值是否达到最大值，达到就更新UI并中断线程，没有达
+     到就该进度值自增1，并封装成message对象发向主UI线程
+5. 重构Handler类的handleMessage方法,处理接收到数据信息后，将更新UI
+
+
